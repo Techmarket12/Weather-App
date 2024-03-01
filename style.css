@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(12, 30, 90);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 250px;
+    width: 20%;
+    margin: 250px auto;
+    background-color: rgb(64, 50, 255);
+    transition: 1s ease-in-out;
+    border-radius: 10px;
+    padding-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden; 
+    height: 150px;
+    position: relative;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+    border: 1px solid black;
+    padding: 10px 24px ;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    width: 80%;
+    position: relative;
+
+}
+#exept {
+    /* display: block; */
+    position: absolute;
+    left: 6%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.nav input {
+    border: none;
+    font-weight: bold;
+    /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+.nav input::placeholder {
+    color: black;
+}
+.nav input:focus {
+    outline: none;
+}
+#glass {
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.mod-temp {
+    display: flex;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 25px;
+}
+.city {
+    font-size: 2rem;
+    color: white;
+}
+#imgg {
+    margin-top: 50px;
+    height: 200px;
+}
+.info-sup {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+.info-sup img {
+    height: 25px;
+}
+.humidity div {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 10px;
+    color: white;
+}
+.humidity p {
+    margin-top: 10px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.wind-speed div {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 10px;
+    color: white;
+}
+.wind-speed p {
+    margin-top: 10px;
+    color: white;
+    font-size: 1.2rem;
+}
